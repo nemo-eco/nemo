@@ -1,4 +1,5 @@
 import React from 'react';
+import NftCard from './NftCard';
 
 function NftGrid(props) {
 	// Store props nfts into variable
@@ -6,21 +7,18 @@ function NftGrid(props) {
 
 	// Return grid with nfts variable mapped into divs with the image
 	return (
-		<div>
-			<h1>NFTs</h1>
+		<div className='site-header'>
+			<h1>Saving corals one masterpiece at a time.</h1>
+			<p className='paragraph'>
+				NFT Marketplace giving coral foundations access to funding through
+				digital art royalties, instead of relying on donations & grants.
+			</p>
 			<div className='grid'>
 				{nfts &&
 					nfts.map((nft, i) => {
 						return (
-							<div className='nftCard' key={i}>
-								<h1>NFT {i}</h1>
-								<h3>{nft.token.description}</h3>
-								<img
-									src={`https://ipfs.io/ipfs/${nft.token.artifact_uri.slice(
-										7
-									)}`}
-									alt=''
-								/>
+							<div className='card-parent' key={i}>
+								<NftCard nft={nft} />
 							</div>
 						);
 					})}

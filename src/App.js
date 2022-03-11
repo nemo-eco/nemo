@@ -5,11 +5,9 @@ import NftGrid from './NftGrid';
 import './App.css';
 
 function App() {
-	
-	// Create hook to fetch and store NFTs 
+	// Create hook to fetch and store NFTs
 	const [nfts, setNfts] = useState([]);
 
-	
 	// Make call to Objkt's API
 	useEffect(() => {
 		const getNfts = async () => {
