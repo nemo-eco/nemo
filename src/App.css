@@ -1,3 +1,45 @@
 .App {
 	text-align: center;
+	background-color: #432160;
+	color: #ff6f61;
+	font-family: 'DM Sans';
+	font-style: normal;
+}
+
+nav {
+	display: flex;
+	background-color: #432160;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav h1 {
+	font-size: 72px;
+}
+
+.navTitle {
+	padding: 0 2rem;
+	margin-top: 0;
+	/* background-color: #fcf4d9; */
+}
+
+.walletBtn {
+	margin: 0 2rem;
+	padding: 0 2rem;
+	border-radius: 25px;
+	background-color: #ff6f61;
+	color: #fcf4d9;
+}
+
+.walletBtn:hover {
+	cursor: pointer;
+}
+
+.walletBtn h3 {
+	padding: 0.75rem;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
 }

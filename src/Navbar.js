@@ -3,7 +3,14 @@ import React from 'react';
 function Navbar() {
 	return (
 		<nav>
-			<h1>Nemo</h1>
+			<div className='navTitle'>
+				<h1>nemo</h1>
+			</div>
+			<div className='connectWallet'>
+				<div className='walletBtn'>
+					<h3>Connect Wallet</h3>
+				</div>
+			</div>
 		</nav>
 	);
 }
