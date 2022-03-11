@@ -5,10 +5,12 @@ import NftGrid from './NftGrid';
 import './App.css';
 
 function App() {
+	
+	// Create hook to fetch and store NFTs 
 	const [nfts, setNfts] = useState([]);
 
-	// Make API call
-
+	
+	// Make call to Objkt's API
 	useEffect(() => {
 		const getNfts = async () => {
 			const options = {
@@ -54,7 +56,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Navbar />
-			<NftGrid />
+			<NftGrid nfts={nfts} />
 		</div>
 	);
 }
