@@ -23,6 +23,7 @@ nav h1 {
 	padding: 0 2rem;
 	margin-top: 0;
 	align-items: center;
+	justify-content: center;
 	/* background-color: #fcf4d9; */
 }
 
@@ -66,6 +67,7 @@ nav h1 {
 
 .card-parent {
 	display: flex;
+	justify-content: center;
 }
 
 .card-child {
