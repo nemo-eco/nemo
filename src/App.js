@@ -30,6 +30,10 @@ function App() {
 							token {
 								artifact_uri
 								description
+								name
+								royalties {
+									amount
+								}
       }
     }
   }
