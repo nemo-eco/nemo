@@ -5,7 +5,7 @@ function Navbar() {
 	return (
 		<nav>
 			<div className='navTitle'>
-				<img src={logo} alt="logo" />
+				<img src={logo} alt='logo' />
 				<h1>nemo</h1>
 			</div>
 
@@ -14,10 +14,11 @@ function Navbar() {
 				<p>Drops</p>
 				<p>Artists</p>
 				<p>Foundations</p>
-				<div className='connectWallet'>
-					<div className='walletBtn'>
-						<h3>Connect Wallet</h3>
-					</div>
+			</div>
+
+			<div className='connectWallet'>
+				<div className='walletBtn'>
+					<h3>Connect Wallet</h3>
 				</div>
 			</div>
 		</nav>
