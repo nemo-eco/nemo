@@ -18,7 +18,8 @@ function Navbar() {
 
 			<div className='connectWallet'>
 				<div className='walletBtn'>
-					<h3>Connect Wallet</h3>
+					<h3 className='wallet-text'>Connect Wallet</h3>
+					<h3 className='wallet-text-small'>Wallet</h3>
 				</div>
 			</div>
 		</nav>
