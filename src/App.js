@@ -34,10 +34,10 @@ function App() {
 								royalties {
 									amount
 								}
-      }
-    }
-  }
-}`,
+							}
+						}
+					}
+					}`,
 				},
 			};
 
