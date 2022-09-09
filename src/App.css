@@ -96,15 +96,21 @@ nav h1 {
 	width: max-content;
 }
 
-.links {
+.link {
 	display: none;
 	align-content: center;
 	justify-content: center;
 }
 
+.linkto:hover {
+	cursor: pointer;
+	font-weight: bold;
+	color: #ff7a73;
+}
+
 .links p {
 	padding: 0 0.5rem;
-	color: #fcf4d9;
+	/* color: #fcf4d9; */
 }
 .card-image img {
 	padding: 1rem;
