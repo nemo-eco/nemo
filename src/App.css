@@ -36,8 +36,7 @@ nav h1 {
 
 .navTitle img {
 	padding: 0;
-	max-width: 50px;
-	max-height: 50px;
+	max-height: 60px;
 }
 .walletBtn {
 	margin: 0 2rem;
@@ -56,6 +55,13 @@ nav h1 {
 }
 
 .grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.site-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

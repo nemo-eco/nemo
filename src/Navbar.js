@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './images/logo.png';
+// import logo from './images/logo.png';
 
 function Navbar() {
 	return (
 		<nav>
 			<div className='navTitle'>
-				<img src={logo} alt='logo' />
-				<h1>nemo</h1>
+				<img src='https://global-uploads.webflow.com/621674a0d159e26d0003821e/628a51e3226efd232f8d6921_Frame%204.svg' alt='logo' />
 			</div>
 
 			<div className='links'>

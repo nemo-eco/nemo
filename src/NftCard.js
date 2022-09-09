@@ -9,13 +9,23 @@ function NftCard(props) {
 	const royalty =
 		nft.token.royalties[0] === undefined
 			? 0
-			: nft.token.royalties[0].amount.toString().slice(0, -1);
+			: sumRoyalties(nft.token.royalties).toString().slice(0, -1);
 
+	// Create a sumRoyalties function in case the piece has more than one recipient of royalties
+	function sumRoyalties(arr){
+		let sum = 0
+		for (let i = 0; i < arr.length; i++) {
+			
+			sum += nft.token.royalties[i].amount
+		}
+		
+		return sum
+	}
 	return (
 		<div className='card-child'>
 			<div className='card-image'>
 				
-			<a href={`https://objkt.com/asset/${nft.token.fa.contract}/${nft.token.token_id}`} target='_blank'>
+			<a href={`https://objkt.com/asset/${nft.token.fa.contract}/${nft.token.token_id}`} target='_blank' rel='noopener noreferrer'>
 				
 				<img
 					src={`https://ipfs.io/ipfs/${nft.token.display_uri.slice(7)}`}
