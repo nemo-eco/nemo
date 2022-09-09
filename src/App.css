@@ -38,6 +38,11 @@ nav h1 {
 	padding: 0;
 	max-height: 60px;
 }
+
+.navTitle img:hover {
+	cursor:pointer;
+}
+
 .walletBtn {
 	margin: 0 2rem;
 	padding: 0 2rem;
@@ -96,22 +101,16 @@ nav h1 {
 	width: max-content;
 }
 
-.link {
-	display: none;
-	align-content: center;
-	justify-content: center;
-}
-
-.linkto:hover {
-	cursor: pointer;
-	font-weight: bold;
-	color: #ff7a73;
-}
-
 .links p {
 	padding: 0 0.5rem;
 	/* color: #fcf4d9; */
 }
+
+.links p:hover {
+	cursor: pointer;
+	color: #ff7a73;
+}
+
 .card-image img {
 	padding: 1rem;
 	max-height: 200px;
