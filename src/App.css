@@ -1,20 +1,23 @@
 .App {
 	text-align: center;
-	background-color: #432160;
-	color: #ff6f61;
-	font-family: 'DM Sans';
+	background-color: #3C1556;
+	color: #EEF3FA;
+	font-family: 'Panton', sans-serif;
+	font-family: 'Exo';
+	font-size: 700;
 	font-style: normal;
 	letter-spacing: -0.5px;
 }
 
 nav {
 	display: flex;
-	background-color: #432160;
+	background-color: #3C1556;
 	align-items: center;
 	justify-content: space-between;
 }
 
 nav h1 {
+	/* font-family: 'Panton'; */
 	font-size: 72px;
 	margin: 0;
 }
@@ -40,8 +43,8 @@ nav h1 {
 	margin: 0 2rem;
 	padding: 0 2rem;
 	border-radius: 25px;
-	background-color: #ff6f61;
-	color: #fcf4d9;
+	background-color: #FF7A73;
+	color: #EEF3FA;
 }
 
 .walletBtn:hover {
@@ -61,15 +64,17 @@ nav h1 {
 
 .site-header h1,
 .paragraph {
-	color: #fcf4d9;
+	color: #EEF3FA;
 }
 
 .card-parent {
 	display: flex;
-	justify-content: center;
 }
 
 .card-child {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 	width: 600px;
 	border-radius: 25px;
 	padding: 0 0.5rem;
@@ -77,8 +82,12 @@ nav h1 {
 	display: flex;
 	min-width: 350px;
 	max-width: 700px;
-	background-color: #fcf4d9;
-	border-style: solid;
+	background-color: #FF7A73;
+	/* border-style: solid; */
+}
+
+.card-image {
+	width: max-content;
 }
 
 .links {

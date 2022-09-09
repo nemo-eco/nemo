@@ -17,7 +17,7 @@ function NftGrid(props) {
 				{nfts &&
 					nfts.map((nft, i) => {
 						return (
-							<div className='card-parent' key={i}>
+							<div key={i}>
 								<NftCard nft={nft} />
 							</div>
 						);

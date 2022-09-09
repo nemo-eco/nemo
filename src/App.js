@@ -34,6 +34,12 @@ function App() {
 								royalties {
 									amount
 								}
+								display_uri
+								thumbnail_uri
+								fa {
+								contract
+								}
+								token_id
       }
     }
   }

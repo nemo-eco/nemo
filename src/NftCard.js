@@ -14,15 +14,19 @@ function NftCard(props) {
 	return (
 		<div className='card-child'>
 			<div className='card-image'>
+				
+			<a href={`https://objkt.com/asset/${nft.token.fa.contract}/${nft.token.token_id}`} target='_blank'>
+				
 				<img
-					src={`https://ipfs.io/ipfs/${nft.token.artifact_uri.slice(7)}`}
+					src={`https://ipfs.io/ipfs/${nft.token.display_uri.slice(7)}`}
 					alt=''
 				/>
+			</a>
 			</div>
 			<div className='title'>
 				<h2 className='name'>{nft.token.name}</h2>
 				<p>{nft.token.description}</p>
-				<h4 className='royalties'>Royalties: {royalty}%</h4>
+				<h4 className='royalties'>Royalties: {royalty.slice(-4,2) || '0'}%</h4>
 			</div>
 		</div>
 	);

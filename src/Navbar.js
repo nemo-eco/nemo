@@ -10,10 +10,10 @@ function Navbar() {
 			</div>
 
 			<div className='links'>
-				<p>Explore</p>
-				<p>Drops</p>
+				<p>How to buy an NFT</p>
+				<p>Coral Hub</p>
 				<p>Artists</p>
-				<p>Foundations</p>
+				<p>NFT collection</p>
 			</div>
 
 			<div className='connectWallet'>
