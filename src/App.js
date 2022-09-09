@@ -19,7 +19,7 @@ function App() {
 				},
 				data: {
 					query: `{
-					holder_by_pk(address: "tz1LMdXbNkqYaQb2gzASiuhnPCTN1AReh1H8") {
+					holder_by_pk(address: "tz1QapCkVSNC74z1HXftpR9RunENzdP9Yj9e") {
 						alias
 						description
 						logo
