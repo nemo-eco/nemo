@@ -25,7 +25,7 @@ function App() {
 						logo
 						tzdomain
 						website
-						held_tokens(where: {quantity: {_gt: "0"}}) {
+						held_tokens(where: {quantity: {_gt: "0"}, token: {fa_contract: {_eq: "KT1TpydA8FVMb2P2QrMnYygigWFo9zYfP6yo"}}}) {
 							quantity
 							token {
 								artifact_uri
