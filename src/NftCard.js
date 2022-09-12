@@ -5,7 +5,7 @@ function NftCard(props) {
 	// store props into nft variable
 	const nft = props.nft;
 	// store ipfs link
-	const uri = nft.token.display_uri === null ? null : nft.token.display_uri.slice(7);
+	const uri = nft.token.thumbnail_uri === null ? null : nft.token.thumbnail_uri.slice(7);
 
 
 	// check if there's a value in royalty or undefined to avoid errors. Otherwise store value
