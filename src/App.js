@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import NftGrid from './NftGrid';
+import Hero from './Hero';
 import './App.css';
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Navbar />
+			<Hero />
 			<NftGrid nfts={nfts} />
 		</div>
 	);
