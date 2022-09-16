@@ -85,7 +85,7 @@ nav h1 {
 .card-child {
 	justify-content: center;
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	width: 600px;
 	border-radius: 25px;
 	padding: 0 0.5rem;
@@ -94,16 +94,14 @@ nav h1 {
 	min-width: 350px;
 	max-width: 700px;
 	background-color: #FF7A73;
-	/* border-style: solid; */
 }
 
 .card-image {
-	width: max-content;
+	justify-content: center;
 }
 
 .links p {
 	padding: 0 0.5rem;
-	/* color: #fcf4d9; */
 }
 
 .links p:hover {
@@ -129,6 +127,9 @@ nav h1 {
 		display: flex;
 	}
 
+	.card-child{
+		flex-direction: column;
+	}
 	.wallet-text-small {
 		display: none;
 	}
